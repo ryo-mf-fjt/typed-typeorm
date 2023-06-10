@@ -1,1 +1,1 @@
-# TypedTypeorm
+# typed-typeorm
