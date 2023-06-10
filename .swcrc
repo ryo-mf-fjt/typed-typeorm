@@ -1,0 +1,29 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": false
+    },
+    // ターゲットは好きなやつを。ただドキュメントには
+    // Disable es3 / es5 / es2015 transforms と書いてあるので
+    // es2015以下は利用できない？？？
+    "target": "es2020",
+    "keepClassNames": true,
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    }
+    // パスエイリアスを利用しているなら以下2項目を編集する。利用してなければ削除。
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
+  },
+  "module": {
+    "type": "commonjs",
+    "noInterop": false
+  },
+  "sourceMaps": true
+}
